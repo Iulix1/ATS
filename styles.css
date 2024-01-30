@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+/* Design pentru nav-bar */
+
+nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 150px;
+      background-color: rgb(29,208,52);
+      gap: 9px;
+      user-select: none;
+}
+
+nav a {
+      text-decoration: none;
+      text-align: center;
+      height: 40px;
+      width: 170px;
+      line-height: 40px;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.4s ease;
+      font-size: 17px;
+      color: rgb(16,17,24);
+}
+
+nav a:hover {
+      cursor: pointer;
+      background-color: rgb(16,17,24);
+      color: white;
+}
+
+nav a:active {
+      color: black;
+}
+
+/* Contentul pentru prima parte a homepage-ului */
+
+.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* gap: 700px; */
+      /* height: 92.7vh; */
+      /* background: rgb(232,232,232);
+      background: linear-gradient(90deg, rgba(232,232,232,1) 0%, rgba(255,255,255,1) 100%); */
+      background-color: rgb(16,17,24);
+      color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+}
+
+.leftSide {
+      margin-left: 100px;
+      width: 500px;
+      z-index: 2;
+}
+
+h1, h2 {
+       color: rgb(29,208,52);
+}
+
+.leftSide h1 {
+      font-size: 40px;
+      letter-spacing: 2px;
+}
+
+.leftSide p {
+      font-size: 20px;
+      margin-top: 20px;
+}
+
+.leftSide button {
+      border: none;
+      padding: 15px;
+      background-color: rgb(29,208,52);
+      color: white;
+      margin-top: 50px;
+      margin-left: 80px;
+      font-size: 16px;
+      transition: all 0.4s ease;
+}
+
+.leftSide button:hover {
+      cursor: pointer;
+      background-color: rgb(9, 112, 23);
+}
+
+/* Making the image div showing up */
+
+.middleSide {
+      position: absolute;
+      height: 500px;
+      width: 500px;
+      background-image: url('./carcasaTransparent.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+      margin-left: 37%;
+}
+
+/* Making the right side of the home-page */
+
+.rightSide {
+      width: 400px;
+      margin-right: 100px;
+}
+
+.rightSide h2 {
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: -2px;
+      margin-bottom: 10px;
+      line-height: 37px;
+}
+
+.rightSide h2 a {
+      text-decoration: none;
+      cursor: pointer;
+      color: rgb(29,208,52);
+      transition: all 0.2s ease-in-out;
+}
+
+.rightSide h2 a:hover {
+       color: rgb(7, 95, 19);
+}
+
+.rightSide p {
+      font-size: 17px;
+      margin-bottom: 24px;
+}
+
